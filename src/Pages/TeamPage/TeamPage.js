@@ -9,7 +9,7 @@ const TeamPage = () => {
       name: 'Masoom Choudhary',
       role: 'Full Stack Developer',
       bio: 'Full Stack Developer skilled in building responsive web applications using React, Node.js, and MongoDB. Passionate about clean code, user experience, and scalable backend systems. Always eager to learn and innovate in fast-paced development environments.',
-      image: "/Masoom.jpeg",
+      image: "https://res.cloudinary.com/drfnb7ltd/image/upload/v1747502444/e7cxplotexlgpfnujb8x.jpg",
       social: {
         linkedin: 'https://www.linkedin.com/in/masoom-choudhary-9776a3333/',
         twitter: '#',
@@ -30,7 +30,7 @@ const TeamPage = () => {
       name: 'Siddhesh Joshi',
       role: 'UI and Frontend Develeoper',
       bio: 'UI and Frontend Developer passionate about crafting intuitive, responsive, and visually appealing user interfaces using React, HTML, CSS, and JavaScript. Dedicated to enhancing user experience through clean design and modern web technologies.',
-      image: '/2.jpg',
+      image: 'https://res.cloudinary.com/drfnb7ltd/image/upload/v1747502652/xgmmq2jplbkcdbwugh75.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/siddhesh-joshi-2936b8313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         twitter: '#',
@@ -50,7 +50,7 @@ const TeamPage = () => {
       name: 'Shruti Trivedi',
       role: 'Frontend Developer',
       bio: 'Frontend Developer skilled in building fast, responsive, and user-friendly web applications using React, JavaScript, HTML, and CSS. Passionate about clean code, seamless user experiences, and modern UI design.',
-      image: '/1.jpeg',
+      image: 'https://res.cloudinary.com/drfnb7ltd/image/upload/v1747502634/e3owbyslz4pxo3csnaum.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/shruti-trivedi-90b202260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         twitter: '#',
@@ -68,7 +68,7 @@ const TeamPage = () => {
       name: 'Sourabh Mishar',
       role: 'Backend Developer',
       bio: 'Backend Developer focused on building robust, scalable, and secure server-side applications using Node.js, Express, and MongoDB. Experienced in REST APIs, database design, and cloud integration to power seamless user experiences.',
-      image: '/3.jpg',
+      image: 'https://res.cloudinary.com/drfnb7ltd/image/upload/v1747502670/par2lxupmgywal8blo5j.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/sourabh-mishra-76375725b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         twitter: '#',

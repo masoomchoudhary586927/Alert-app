@@ -460,4 +460,4 @@ const [message, setMessage] = useState('');
   );
 };
 
-export default EmergencyAlert;
+export default EmergencyAlert;  

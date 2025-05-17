@@ -330,8 +330,7 @@ const handleSaveProfile = async () => {
               )}
               {editMode && (
                 <div className="avatar-edit">
-                  <label htmlFor="profile-photo" >
-                   
+                  <label htmlFor="profile-photo">
                     
                   </label>
                 </div>
