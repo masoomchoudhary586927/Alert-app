@@ -1,5 +1,5 @@
 import React from "react";
-import { useRoutes } from "react-router-dom";
+import { useRoutes, useLocation } from "react-router-dom";
 import { AuthProvider, useAuth } from "./contexts/authContext";
 
 import Login from "./components/auth/login";
@@ -21,9 +21,20 @@ import Navbar from "./components/auth/Navbar/Navbar";
 import Footer from "./Pages/Footer/Footer";
 import ReportStatus from "./Pages/ReportStatus/ReportStatus";
 
-
 function AppContent() {
   const { currentUser } = useAuth();
+  const location = useLocation();
+
+  // Define the paths where Navbar/Footer should be hidden
+  const hideLayoutPaths = [
+    "/police-dashboard",
+    "/fire-brigade-dashboard",
+    "/ambulance-dashboard",
+    "/disaster-dashboard",
+    "/admin-dashboard",
+  ];
+
+  const shouldHideLayout = hideLayoutPaths.includes(location.pathname);
 
   const routesArray = [
     { path: "*", element: <Login /> },
@@ -41,16 +52,16 @@ function AppContent() {
     { path: "/ambulance-dashboard", element: <AmbulancePage /> },
     { path: "/disaster-dashboard", element: <DisasterDashboard /> },
     { path: "/admin-dashboard", element: <AdminDashboard /> },
-    { path: "/reportstatus",element :<ReportStatus/>}
+    { path: "/reportstatus", element: <ReportStatus /> },
   ];
 
   const routesElement = useRoutes(routesArray);
 
   return (
     <div className="w-full min-h-screen flex flex-col">
-      {currentUser && <Navbar />}
+      {!shouldHideLayout && currentUser && <Navbar />}
       <main className="flex-grow">{routesElement}</main>
-      {currentUser && <Footer />}
+      {!shouldHideLayout && currentUser && <Footer />}
     </div>
   );
 }
