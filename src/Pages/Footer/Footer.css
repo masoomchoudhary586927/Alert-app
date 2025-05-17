@@ -1,0 +1,129 @@
+/* General Footer Styling */
+.footer {
+    background-color: #1d3557; /* Solid dark color for the footer */
+    color: #fff;
+    padding: 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  /* Footer Content Container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex: 1 1 250px;
+    margin: 10px;
+  }
+  
+  /* Section Headers */
+  .footer-section h2 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /* Paragraph Styling */
+  .footer-section p {
+    font-size: 1rem;
+    color: #b8b8b8;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+  /* Links Styling */
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    font-size: 1rem;
+    color: #b8b8b8;
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #a8dadc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #2a9d8f;
+  }
+  
+  /* Social Media Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-links li a {
+    color: #b8b8b8;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links li a:hover {
+    color: #2a9d8f;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .footer-section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .footer-section p,
+    .footer-section ul li {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8rem;
+    }
+  
+    .footer-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .footer-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
